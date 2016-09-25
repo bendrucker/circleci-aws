@@ -1,0 +1,42 @@
+{
+  "name": "circleci-aws",
+  "main": "index.js",
+  "bin": {
+    "circleci-aws": "cli.js"
+  },
+  "version": "0.0.0",
+  "description": "Configure CircleCI with AWS keys",
+  "license": "MIT",
+  "repository": "bendrucker/circleci-aws",
+  "author": {
+    "name": "Ben Drucker",
+    "email": "bvdrucker@gmail.com",
+    "url": "bendrucker.me"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "circleci",
+    "ci",
+    "aws",
+    "config",
+    "credentials",
+    "access",
+    "key",
+    "secret"
+  ],
+  "devDependencies": {
+    "blue-tape": "~1.0.0",
+    "standard": "^7.0.0",
+    "tape": "^4.0.0"
+  },
+  "files": [
+    "*.js"
+  ],
+  "dependencies": {
+    "got": "~6.5.0",
+    "meow": "~3.7.0",
+    "snakecase-keys": "~1.0.0"
+  }
+}
