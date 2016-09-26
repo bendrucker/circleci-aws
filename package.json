@@ -4,7 +4,7 @@
   "bin": {
     "circleci-aws": "cli.js"
   },
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Configure CircleCI with AWS keys",
   "license": "MIT",
   "repository": "bendrucker/circleci-aws",
