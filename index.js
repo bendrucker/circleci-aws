@@ -12,7 +12,7 @@ module.exports = {
 }
 
 function get (data) {
-  return got(createUrl(data), {json: true}).then((response) => response.body.aws.keypair)
+  return got(createUrl(data), { json: true }).then((response) => response.body.aws.keypair)
 }
 
 function set (data) {
@@ -33,7 +33,7 @@ function set (data) {
     },
     json: true
   })
-  .then(() => null)
+    .then(() => null)
 }
 
 function remove (data) {
@@ -48,7 +48,7 @@ function remove (data) {
     },
     json: true
   })
-  .then(() => null)
+    .then(() => null)
 }
 
 function Circle (fn) {

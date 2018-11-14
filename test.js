@@ -13,24 +13,24 @@ test(function (t) {
     access_key_id: 'beep',
     secret_access_key: 'boop'
   })
-  .then(() => get())
-  .then(function (keypair) {
-    t.ok(keypair.access_key_id.startsWith('xx'))
-    t.ok(keypair.access_key_id.endsWith('ep'))
+    .then(() => get())
+    .then(function (keypair) {
+      t.ok(keypair.access_key_id.startsWith('xx'))
+      t.ok(keypair.access_key_id.endsWith('ep'))
 
-    t.ok(keypair.secret_access_key.startsWith('xx'))
-    t.ok(keypair.secret_access_key.endsWith('op'))
+      t.ok(keypair.secret_access_key.startsWith('xx'))
+      t.ok(keypair.secret_access_key.endsWith('op'))
 
-    return circleAws.remove({
-      username: 'bendrucker',
-      project: 'circleci-aws',
-      circle_token: token
+      return circleAws.remove({
+        username: 'bendrucker',
+        project: 'circleci-aws',
+        circle_token: token
+      })
     })
-  })
-  .then(() => get())
-  .then(function (keypair) {
-    t.equal(keypair, null)
-  })
+    .then(() => get())
+    .then(function (keypair) {
+      t.equal(keypair, null)
+    })
 })
 
 function get () {
