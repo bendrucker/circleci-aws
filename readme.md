@@ -1,4 +1,4 @@
-# circleci-aws [![Build Status](https://travis-ci.org/bendrucker/circleci-aws.svg?branch=master)](https://travis-ci.org/bendrucker/circleci-aws)
+# circleci-aws [![Build Status](https://travis-ci.org/bendrucker/circleci-aws.svg?branch=master)](https://travis-ci.org/bendrucker/circleci-aws) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/circleci-aws.svg)](https://greenkeeper.io/)
 
 > Configure CircleCI with AWS keys
 
