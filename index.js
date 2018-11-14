@@ -20,14 +20,14 @@ function set (data) {
   assert(data.secret_access_key, 'secret_access_key is required')
 
   return got.put(createUrl(data), {
-    body: JSON.stringify({
+    body: {
       aws: {
         keypair: {
           access_key_id: data.access_key_id,
           secret_access_key: data.secret_access_key
         }
       }
-    }),
+    },
     headers: {
       'content-type': 'application/json'
     },
